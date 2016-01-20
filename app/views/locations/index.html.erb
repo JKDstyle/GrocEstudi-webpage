@@ -1,1 +1,6 @@
-<h1>hello madafaka</h1>
+<% @locations.each do |location| %>
+  <div class="location">
+    <h1 class="location-cities"><%= link_to location.cities, location %></h1>
+    <p class="location-address"><%= location.address %></p>
+  </div>
+<% end %>
